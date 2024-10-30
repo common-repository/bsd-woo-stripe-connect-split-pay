@@ -1,0 +1,219 @@
+= 3.5.0 = 
+* Tax handling improvements. 
+
+= 3.4.9 = 
+* Tax handling improvements. 
+
+= 3.4.8 = 
+* Major bug fixes and improvements.
+* Reconfiguration of API key approach due to changes in WooCommerce Stripe Payment Gateway plugin.
+
+= 3.4.7 = 
+* Improved tax handling. 
+
+= 3.4.6 = 
+* Add Tax Handling. 
+
+= 3.4.5 = 
+* Updated translations. 
+
+= 3.4.4 = 
+* Updated translation .POT file. 
+* Updates to UI. 
+* Updated Freemius SDK. 
+
+= 3.4.3 = 
+* Added Transfer Confirmation email in WooCommerce settings.
+* Fixes to bulk editor. 
+* Fixes to Stripe Connect. 
+* Coupon fixes due to changes in WooCommerce.  
+
+= 3.4.2 =
+* Correct usage of API keys in TEST/LIVE modes for Stripe Connect.
+
+= 3.4.1 =
+* Fix to Stripe Connect in TEST mode. 
+* Fix for styling issue on Stripe Connect button. 
+
+= 3.4 =
+* Bulk Editor added! You can now bulk edit transfer details for all products and variations in the PRO version. 
+* Update to Freemius SDK. 
+* General bug fixes.
+
+= 3.3.11 =
+* Fix to 100% transfer calculation.
+* Layout fix to product view.
+* Update to Freemius SDK. 
+
+= 3.3.10 =
+* Stability improvements and bug fixes. 
+* Updated strings translation. 
+* Fix for shipping transfer value not working when standard transfer value was 0. 
+
+= 3.3.9 =
+* Added option to transfer order details to Stripe metadata. 
+* Bug fixes to error mechanism.
+* Improves to the Transfers Tab layout. 
+
+= 3.3.8 =
+* Fix to HPOS.
+* Confirmed that the plugin works with Woo Subscriptions.  
+
+= 3.3.7 =
+* Added support for simple product types created by 3rd party plugins or themes. 
+* Added support for Woo High-Performance Order Storage. 
+* Updated Freemius SDK. 
+
+= 3.3.6 =
+* Updates to Stripe Connect mechanism.
+* Fix to auto-deactivation of the free version on PRO upgrade. 
+
+= 3.3.5 =
+* Added Stripe Connect onboarding for Vendors. 
+* Added fields for transferring a percentage or fixed amount of shipping fees.
+* Added CSV export mechanism for transfers. 
+* Updated Freemius SDK. 
+
+= 3.3.4 =
+* Bug fixes
+
+= 3.3.3 = 
+* Updated some text strings, upgrade mechanisms, and icons. 
+
+= 3.3.2 = 
+* Additional bug fixes for saving/deleting connected account settings.
+* Extended capability of multiple connected accounts to product-level.
+
+= 3.3.1 = 
+* Updated Freemius SDK.
+* Resolved bugs of not being able to save or remove selected connected account. 
+
+= 3.3 =
+* Multiple connected accounts now supported! 
+
+= 3.2.10 =
+* Coupon compatibility fix. 
+* Update Freemius SDK. 
+
+= 3.2.9 =
+* Support for splitting payments coupons involved. 
+* Fix for Stripe accounts synchronization issue. 
+* Freemius SDK update. 
+
+= 3.2.8 =
+* Bugfix for displaying error message when unable to connect to platform accounts. 
+* General bugfixes and stability improvements. 
+* Freemius SDK update. 
+
+= 3.2.7 =
+* Database storage bugfix for free version. 
+* Update to retrieving Object ID from Stripe. 
+
+= 3.2.6 =
+* Database storage bugfix. 
+
+= 3.2.5 =
+* Added Fixed Amount split payments.
+* Added percentage-based and fixed amount split transfers to variable products in WooCommerce. 
+* Added option to transfer shipping fees to connected accounts. 
+
+= 3.2.4 =
+* Fixed pagination issue with transfers tab.
+* Fixed multiple-quantity order miscalculations. 
+
+= 3.2.3 = 
+* Implemented Stripe Connect mechanism.
+* Using checkout total by default for splitting percentage instead of Subtotal.
+* General bug fixes and stability improvements. 
+
+= 3.2.2 = 
+* Sanizations and escapes for WordPress.org compliance. 
+* Fixed bug preventing the saving of WooCommerce products. 
+
+= 3.2.1 = 
+* Updated Freemius SDK to v2.4.5.
+* General bug fixes and security improvements. 
+
+= 3.2.0 =
+* Added a premium feature allowing administrators to configure different split percentages at the product level.
+* Removed Exclude Shipping and Exclude Tax settings (plugin now automatically excludes both).
+
+= 3.1.0 =
+* Fixed a bug with the Exclude Shipping and Exclude Tax settings.
+* Tested with WooCommerce 5.2.2.
+* Tested with WordPress 5.7.1.
+
+= 3.0.1 =
+* Tested with WooCommerce 5.2.1.
+* Minor tweaks to installation instructions and screenshot.
+
+= 3.0.0 =
+* Complete code refactor to streamline plugin.
+* Tested with WooCommerce v5.2.
+* Moved plugin settings menu.
+* Added plugin link to documentation.
+* Updated to use WooCommerce currency setting.
+
+= 2.5.4 =
+* Tested with WordPress 5.7
+* Tested with WooCommerce 5.1
+
+= 2.5.3 = 
+* Tested with WordPress 5.5
+* Tested with WooCommerce 4.3.2
+
+= 2.5.2 =
+* Updating licensing platform to Freemius
+
+= 2.5.1 =
+* Fix for plugin update banner
+
+= 2.5.0 =
+* Rewrote Stripe routine to handle multiple sites
+* Some code refactoring for efficiency
+
+= 2.4.3 =
+* Added check to verify Stripe source ID matches existing WC ID
+* Fixed update banner image
+
+= 2.4.2 =
+* Updated Transfer section total record count to include test/live mode filter
+
+= 2.4.1 =
+* Fixed WordPress support tag
+
+= 2.4.0 =
+* Implemented new Transfers section, including Stripe reference IDs
+* Filter the Transfers section based on Stripe test mode vs live mode
+* Removed old dashboard
+
+= 2.3.1 =
+* Pre-release for 2.4
+* Added plugin upgrade functionality to accommodate future database changes
+* Created new transfer log database table
+* Added instance of core WP table class
+* Updated uninstall logic
+
+= 2.3.0 =
+* Added exception handling for Stripe Connected Account not found ("No such destination")
+* Enhanced so we will only process a webhook if the statement descriptor configured in WooCommerce > Settings > Payments matches the statement descriptor returned in the webhook response
+
+= 2.2.1 =
+* Fixed bug in webhook check
+
+= 2.2 =
+* Added plugin update checks for licensed instances
+
+= 2.1 =
+* Added licensing
+
+= 2.0 =
+* Moved from a stand-alone WordPress dashboard item to a tab inside WooCommerce Settings
+* Merged features into standard WordPress plugin structure
+* Sets WooCommerce Stripe Gateway as a plugin dependency
+* Removed separate settings for Stripe keys and test/live mode; now gets those settings from the WooCommerce Stripe Gateway plugin
+* Eliminated custom styles
+* Added an option to exclude sales tax from transfer calculations
+
+= 1.0 =
+* Initial version of the plugin.
